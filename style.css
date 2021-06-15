@@ -137,7 +137,7 @@ html{scroll-behavior:smooth}
     border-bottom-style: none;
 }
 .main-header-bar.ast-sticky-active {
-    background-color: rgba(0,0,0,.3);
+    background-color: rgba(255,255,255,.8);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
