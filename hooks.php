@@ -100,6 +100,11 @@ function custom_page_title () {
                     Category Archive: <?php single_cat_title(); ?>
                 <?php elseif (is_tag()) : ?>
                     Tag Archive: <?php single_tag_title(); ?>
+                <?php elseif (is_tax()) : ?>
+                    <?php
+                        $term = get_term_by( 'slug', get_query_var('term'), get_query_var('taxonomy') );
+                        echo $term->name;
+                    ?>
                 <?php elseif (is_search()) : ?>
                     Search Result for <?php echo get_search_query(); ?>
                 <?php elseif (is_404()) : ?>
